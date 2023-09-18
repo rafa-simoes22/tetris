@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+    <style>
+        .tabuleiro{
+            width: 100px;
+            height: 200px;
+            display: grid;
+            grid-template-columns: 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px;
+            grid-template-rows: 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px;
+        }
+        .quadradinho{
+            width: 10px;
+            height: 10px;
+            border: solid;
+
+        }
+        .quadradinho:nth-child(3n+0){ 
+            background-color: aqua;
+        }
+        .quadradinho:nth-child(4n+0){
+            background-color: yellow;
+        }
+        .quadradinho:nth-child(5n+0){
+            background-color: greenyellow;
+        }
+        .quadradinho:nth-child(6n+0){
+            background-color: red;
+        }
+        .quadradinho:nth-child(7n+0){ 
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tabuleiro">
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+        <div class="quadradinho"></div>
+
+    </div>
+</body>
+</html>
